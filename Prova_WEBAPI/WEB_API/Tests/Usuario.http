@@ -1,0 +1,24 @@
+@url_base = http://localhost:5262/api/usuario
+
+### Cadastrar um usuario
+POST {{url_base}}/cadastrar
+Content-Type: application/json
+
+{
+    "Email": "diogo2@gmail.com",
+    "Senha": "teste123"
+}
+
+### Listar
+GET {{url_base}}/listar
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiZGlvZ28yQGdtYWlsLmNvbSIsImV4cCI6MTc0NjQ4OTQ1OH0.DrSvbIk2wcvtFrG59hDyPft7cxbBVQuj8_gUXeA0xiU
+
+
+### Login
+POST {{url_base}}/login
+Content-Type: application/json
+
+{
+    "email" : "diogo2@gmail.com",
+    "senha" : "teste123"
+}
